@@ -14,8 +14,10 @@ struct ListView: View {
     var body: some View {
         VStack {
             if (self.isLoading) {
+                // Show ProgressView while data is being fetched
                 ProgressView()
             } else {
+                // Once data loads, display in List
                 NavigationView {
                     List {
                         ForEach(viewModel.recipeList) { recipe in
@@ -30,7 +32,7 @@ struct ListView: View {
             }
         }
         .onAppear() {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 self.isLoading = false
             }
         }
@@ -51,8 +53,10 @@ struct RecipeView: View {
     var body: some View {
         VStack {
             if (self.isLoading) {
+                // Show ProgressView while data is being fetched
                 ProgressView()
             } else {
+                // Once data loads, display in List
                 Text((viewModel.recipeDetails?.strMeal ?? "No Title").capitalized)
                     .font(
                             .system(
@@ -73,6 +77,7 @@ struct RecipeView: View {
         }
     }
     
+    // Computed var for ingredient list
     var ingredientListView: some View {
         NavigationView {
             List {
@@ -84,6 +89,7 @@ struct RecipeView: View {
         }
     }
     
+    // Computed var for instruction list
     var instructionListView: some View {
         NavigationView {
             List {

@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         ListView(viewModel: viewModel)
             .onAppear() {
+                // Call to themealdb API
                 viewModel.getData()
             }
     }

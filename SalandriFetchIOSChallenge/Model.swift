@@ -7,10 +7,12 @@
 
 import Foundation
 
+// Representation of all meals in dessert category
 struct DessertResponse: Decodable {
     var meals: [Recipe]
 }
 
+// Representation of a single meal in dessert category
 struct Recipe: Decodable, Identifiable {
     let idMeal: String
     let strMeal: String
@@ -25,6 +27,7 @@ struct RecipeResponse: Decodable {
     var meals: [RecipeDetails]
 }
 
+// Representation of all details of a recipe
 struct RecipeDetails: Decodable, Identifiable {
     let idMeal: String
     let strIngredient1: String?
@@ -75,6 +78,7 @@ struct RecipeDetails: Decodable, Identifiable {
        idMeal
     }
     
+    // Computed var to store each ingredient and measurement in an array
     var ingredients: Array<String?> {
         [
             (strIngredient1 ?? "").capitalized + ", " + (strMeasure1 ?? ""),
@@ -100,6 +104,7 @@ struct RecipeDetails: Decodable, Identifiable {
         ]
     }
     
+    // Computed var to get all instructions
     var instructions: [String]? {
         var instructions = strInstructions?.components(separatedBy: "\n")
         instructions?.removeAll { value in
