@@ -59,10 +59,8 @@ struct RecipeView: View {
                 // Once data loads, display in List
                 Text((viewModel.recipeDetails?.strMeal ?? "No Title").capitalized)
                     .font(
-                            .system(
-                                .largeTitle,
-                                design: .rounded
-                            )
+                        .system(.title)
+                        .weight(.bold)
                         )
                 ingredientListView
                 instructionListView
