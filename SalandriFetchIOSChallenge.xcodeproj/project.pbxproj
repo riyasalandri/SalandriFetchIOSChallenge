@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAA322EA2ABA47D4004B7505 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA322E92ABA47D4004B7505 /* ViewModel.swift */; };
+		AAA322EC2ABA47E5004B7505 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA322EB2ABA47E5004B7505 /* Model.swift */; };
+		AAA322EE2ABA47F1004B7505 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA322ED2ABA47F1004B7505 /* View.swift */; };
 		AAD81AE12ABA262900719F71 /* SalandriFetchIOSChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD81AE02ABA262900719F71 /* SalandriFetchIOSChallengeApp.swift */; };
 		AAD81AE32ABA262900719F71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD81AE22ABA262900719F71 /* ContentView.swift */; };
 		AAD81AE52ABA262A00719F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD81AE42ABA262A00719F71 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAA322E92ABA47D4004B7505 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AAA322EB2ABA47E5004B7505 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AAA322ED2ABA47F1004B7505 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AAD81ADD2ABA262900719F71 /* SalandriFetchIOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalandriFetchIOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD81AE02ABA262900719F71 /* SalandriFetchIOSChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalandriFetchIOSChallengeApp.swift; sourceTree = "<group>"; };
 		AAD81AE22ABA262900719F71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				AAD81AE42ABA262A00719F71 /* Assets.xcassets */,
 				AAD81AE62ABA262A00719F71 /* SalandriFetchIOSChallenge.entitlements */,
 				AAD81AE72ABA262A00719F71 /* Preview Content */,
+				AAA322E92ABA47D4004B7505 /* ViewModel.swift */,
+				AAA322EB2ABA47E5004B7505 /* Model.swift */,
+				AAA322ED2ABA47F1004B7505 /* View.swift */,
 			);
 			path = SalandriFetchIOSChallenge;
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD81AE32ABA262900719F71 /* ContentView.swift in Sources */,
+				AAA322EA2ABA47D4004B7505 /* ViewModel.swift in Sources */,
+				AAA322EE2ABA47F1004B7505 /* View.swift in Sources */,
 				AAD81AE12ABA262900719F71 /* SalandriFetchIOSChallengeApp.swift in Sources */,
+				AAA322EC2ABA47E5004B7505 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

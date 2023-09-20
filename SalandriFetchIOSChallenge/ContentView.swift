@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {    
+    var viewModel = ViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        ListView(viewModel: viewModel)
+            .onAppear() {
+                viewModel.getData()
+            }
     }
 }
 
